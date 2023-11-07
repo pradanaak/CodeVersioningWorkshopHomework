@@ -1,0 +1,1 @@
+Branching is a way to diverge from the current version

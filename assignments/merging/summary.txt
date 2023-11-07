@@ -1,0 +1,1 @@
+Merging is integrate the changes made in one branch into another branch
