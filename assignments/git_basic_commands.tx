@@ -1,0 +1,31 @@
+git init: Initializes a new Git repository and starts tracking an existing directory. It adds a hidden subfolder within the existing directory that houses the internal data structure required for version control.
+
+git clone [url]: Creates a Git repository copy from a remote source. Also adds the original location as a remote so you can fetch from it again and push to it if you have permissions.
+
+git add [file]: Adds a file to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.
+
+git commit -m "[descriptive message]": Takes the staged snapshot and commits it to the project history. Combined with git add, this process defines the basic workflow for all Git users.
+
+git status: Shows the status of changes as untracked, modified, or staged.
+
+git push [alias] [branch]: Transmits local branch commits to the remote repository branch.
+
+git pull: Fetches the files from the remote repository and merges it with your local one. This command is a combination of git fetch and git merge.
+
+git branch: Lists the branches in your repo. When used with -a, it also shows remote branches.
+
+git checkout [branch-name]: Switches to the specified branch and updates the working directory.
+
+git merge [branch]: Merges the specified branch’s history into the current branch. This is usually done in pull requests, but is an important Git operation.
+
+git log: Displays the entire commit history using the default format. If you add -p, it will display the patch representing each commit. This can help you see what changes each commit introduces.
+
+git diff: Shows the file differences which are not yet staged.
+
+git reset [file]: Unstages the file, but it preserves the file contents.
+
+git reset [commit]: Resets the current branch to the specified commit. git reset --hard [commit] resets the branch to the specified commit and discards all changes.
+
+git remote add [alias] [url]: Adds a git URL as an alias.
+
+git fetch [alias]: Fetches all the branches from the repository. This does not merge the changes into your local repository.
