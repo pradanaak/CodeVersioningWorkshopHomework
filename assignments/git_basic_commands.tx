@@ -1,0 +1,5 @@
+git init: Initializes a new Git repository and starts tracking an existing directory. It adds a hidden subfolder within the existing directory that houses the internal data structure required for version control.
+
+git clone [url]: Creates a Git repository copy from a remote source. Also adds the original location as a remote so you can fetch from it again and push to it if you have permissions.
+
+git add [file]: Adds a file to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.
