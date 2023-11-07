@@ -11,3 +11,13 @@ git status: Shows the status of changes as untracked, modified, or staged.
 git push [alias] [branch]: Transmits local branch commits to the remote repository branch.
 
 git pull: Fetches the files from the remote repository and merges it with your local one. This command is a combination of git fetch and git merge.
+
+git branch: Lists the branches in your repo. When used with -a, it also shows remote branches.
+
+git checkout [branch-name]: Switches to the specified branch and updates the working directory.
+
+git merge [branch]: Merges the specified branch’s history into the current branch. This is usually done in pull requests, but is an important Git operation.
+
+git log: Displays the entire commit history using the default format. If you add -p, it will display the patch representing each commit. This can help you see what changes each commit introduces.
+
+git diff: Shows the file differences which are not yet staged.
