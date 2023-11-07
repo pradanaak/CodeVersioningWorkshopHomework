@@ -21,3 +21,11 @@ git merge [branch]: Merges the specified branch’s history into the current bra
 git log: Displays the entire commit history using the default format. If you add -p, it will display the patch representing each commit. This can help you see what changes each commit introduces.
 
 git diff: Shows the file differences which are not yet staged.
+
+git reset [file]: Unstages the file, but it preserves the file contents.
+
+git reset [commit]: Resets the current branch to the specified commit. git reset --hard [commit] resets the branch to the specified commit and discards all changes.
+
+git remote add [alias] [url]: Adds a git URL as an alias.
+
+git fetch [alias]: Fetches all the branches from the repository. This does not merge the changes into your local repository.
