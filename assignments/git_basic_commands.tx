@@ -3,3 +3,11 @@ git init: Initializes a new Git repository and starts tracking an existing direc
 git clone [url]: Creates a Git repository copy from a remote source. Also adds the original location as a remote so you can fetch from it again and push to it if you have permissions.
 
 git add [file]: Adds a file to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run git commit.
+
+git commit -m "[descriptive message]": Takes the staged snapshot and commits it to the project history. Combined with git add, this process defines the basic workflow for all Git users.
+
+git status: Shows the status of changes as untracked, modified, or staged.
+
+git push [alias] [branch]: Transmits local branch commits to the remote repository branch.
+
+git pull: Fetches the files from the remote repository and merges it with your local one. This command is a combination of git fetch and git merge.
